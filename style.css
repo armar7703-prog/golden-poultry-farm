@@ -1,9 +1,40 @@
 body {
   font-family: Arial, sans-serif;
   background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: goldenrod;
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-h1 {
-  color: goldenrod;
-  }
+nav {
+  background-color: #222;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  margin: 10px;
+  border-radius: 10px;
+}
