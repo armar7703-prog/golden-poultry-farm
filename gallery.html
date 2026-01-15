@@ -3,35 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Golden Poultry Farm - Galerie Pro</title>
+<title>Golden Poultry Farm - Galerie</title>
 <link rel="stylesheet" href="assets/css/style.css">
-<style>
-:root{
-  --bg:#fff8f0; --card:#fff; --txt:#333; --accent:#d4af37; --btn:#d4af37; --btn-hover:#bfa12c;
-}
-body{background:var(--bg);color:var(--txt);font-family:Georgia, serif;margin:0;padding:0;}
-nav{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;background:var(--accent);color:#fff;}
-nav h1{font-size:24px;}
-nav .menu a{margin-left:20px;color:#fff;text-decoration:none;font-weight:bold;}
-.hero{padding:60px 20px;text-align:center;background:#fdf2e3;}
-.hero h2{font-size:36px;margin-bottom:10px;}
-.hero p{font-size:18px;margin-bottom:20px;}
-.btn{display:inline-block;background:var(--btn);color:#fff;padding:10px 20px;border-radius:10px;text-decoration:none;font-weight:bold;transition:0.3s;}
-.btn:hover{background:var(--btn-hover);}
-.container{max-width:1200px;margin:auto;padding:20px;}
-.filters{margin-bottom:20px;text-align:center;}
-.filters button{margin:5px;padding:8px 16px;border:none;background:var(--accent);color:#fff;border-radius:8px;cursor:pointer;font-weight:bold;transition:0.3s;}
-.filters button:hover{background:var(--btn-hover);}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-.card{background:var(--card);padding:10px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.1);text-align:center;transition:0.3s; display:none;}
-.card img{width:100%;border-radius:10px;margin-bottom:10px;transition:transform 0.3s;}
-.card:hover img{transform:scale(1.05);}
-.card h3{margin-bottom:5px;color:var(--accent);}
-.price{font-weight:bold;font-size:18px;margin-bottom:10px;}
-.badge{display:inline-block;background:#ff3b3b;color:#fff;font-size:12px;font-weight:bold;padding:4px 8px;border-radius:999px;margin-bottom:10px;}
-footer{text-align:center;padding:20px;background:#f5f5f5;color:var(--txt);}
-.show{display:block !important;}
-</style>
 </head>
 <body>
 
@@ -45,13 +18,13 @@ footer{text-align:center;padding:20px;background:#f5f5f5;color:var(--txt);}
 </nav>
 
 <header class="hero">
-  <h2>Galerie Pro des Poules</h2>
-  <p>Filtrez par race ou par prix pour trouver votre poule idéale</p>
+  <h2>Galerie Professionnelle de Poules</h2>
+  <p>Découvrez toutes nos poules avec prix et commande rapide via WhatsApp</p>
 </header>
 
 <section class="container">
 
-  <!-- FILTRES -->
+  <!-- Filtrage par race -->
   <div class="filters">
     <button onclick="filterSelection('all')">Toutes</button>
     <button onclick="filterSelection('brahma')">Brahma</button>
@@ -86,56 +59,47 @@ footer{text-align:center;padding:20px;background:#f5f5f5;color:var(--txt);}
     <button onclick="filterSelection('new-hampshire')">New Hampshire</button>
   </div>
 
+  <!-- Galerie 30 poules -->
   <div class="grid">
-    <!-- 30 POULES -->
+    <!-- Exemples de cartes avec show -->
     <div class="card brahma show"><span class="badge">Meilleure offre</span><img src="assets/images/poules/brahma.jpg" alt="Brahma"><h3>Brahma</h3><p class="price">$75</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Brahma">Commander</a></div>
-    <div class="card silkie show"><img src="assets/images/poules/silkie.jpg" alt="Silkie"><h3>Silkie</h3><p class="price">$55</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Silkie">Commander</a></div>
-    <div class="card cream-legbar show"><img src="assets/images/poules/cream-legbar.jpg" alt="Cream Legbar"><h3>Cream Legbar</h3><p class="price">$60</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Cream%20Legbar">Commander</a></div>
-    <div class="card isa-brown show"><img src="assets/images/poules/isa-brown.jpg" alt="ISA Brown"><h3>ISA Brown</h3><p class="price">$30</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20ISA%20Brown">Commander</a></div>
-    <div class="card leghorn show"><img src="assets/images/poules/leghorn.jpg" alt="Leghorn"><h3>Leghorn</h3><p class="price">$35</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Leghorn">Commander</a></div>
-    <div class="card sussex show"><img src="assets/images/poules/sussex.jpg" alt="Sussex"><h3>Sussex</h3><p class="price">$38</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Sussex">Commander</a></div>
-    <div class="card orpington show"><img src="assets/images/poules/orpington.jpg" alt="Orpington"><h3>Orpington</h3><p class="price">$50</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Orpington">Commander</a></div>
-    <div class="card plymouth-rock show"><img src="assets/images/poules/plymouth-rock.jpg" alt="Plymouth Rock"><h3>Plymouth Rock</h3><p class="price">$45</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Plymouth%20Rock">Commander</a></div>
-    <div class="card ameraucana show"><img src="assets/images/poules/ameraucana.jpg" alt="Ameraucana"><h3>Ameraucana</h3><p class="price">$55</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Ameraucana">Commander</a></div>
-    <div class="card faverolles show"><img src="assets/images/poules/faverolles.jpg" alt="Faverolles"><h3>Faverolles</h3><p class="price">$60</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Faverolles">Commander</a></div>
-    
-    <div class="card rhode-island-red show"><img src="assets/images/poules/rhode-island-red.jpg" alt="Rhode Island Red"><h3>Rhode Island Red</h3><p class="price">$50</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Rhode%20Island%20Red">Commander</a></div>
-    <div class="card wyandotte show"><img src="assets/images/poules/wyandotte.jpg" alt="Wyandotte"><h3>Wyandotte</h3><p class="price">$52</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Wyandotte">Commander</a></div>
-    <div class="card australorp show"><img src="assets/images/poules/australorp.jpg" alt="Australorp"><h3>Australorp</h3><p class="price">$48</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Australorp">Commander</a></div>
-    <div class="card marans show"><img src="assets/images/poules/marans.jpg" alt="Marans"><h3>Marans</h3><p class="price">$55</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Marans">Commander</a></div>
-    <div class="card cochin show"><img src="assets/images/poules/cochin.jpg" alt="Cochin"><h3>Cochin</h3><p class="price">$60</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Cochin">Commander</a></div>
-    <div class="card ancona show"><img src="assets/images/poules/ancona.jpg" alt="Ancona"><h3>Ancona</h3><p class="price">$50</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Ancona">Commander</a></div>
-    <div class="card hamburg show"><img src="assets/images/poules/hamburg.jpg" alt="Hamburg"><h3>Hamburg</h3><p class="price">$52</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Hamburg">Commander</a></div>
-    <div class="card sussex-light show"><img src="assets/images/poules/sussex-light.jpg" alt="Sussex Light"><h3>Sussex Light</h3><p class="price">$55</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Sussex%20Light">Commander</a></div>
-    <div class="card polish show"><img src="assets/images/poules/polish.jpg" alt="Polish"><h3>Polish</h3><p class="price">$60</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Polish">Commander</a></div>
-    <div class="card campine show"><img src="assets/images/poules/campine.jpg" alt="Campine"><h3>Campine</h3><p class="price">$58</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Campine">Commander</a></div>
-    <div class="card langshan show"><img src="assets/images/poules/langshan.jpg" alt="Langshan"><h3>Langshan</h3><p class="price">$55</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Langshan">Commander</a></div>
-    <div class="card appenzeller show"><img src="assets/images/poules/appenzeller.jpg" alt="Appenzeller"><h3>Appenzeller</h3><p class="price">$60</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Appenzeller">Commander</a></div>
-    <div class="card barnevelder show"><img src="assets/images/poules/barnevelder.jpg" alt="Barnevelder"><h3>Barnevelder</h3><p class="price">$58</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Barnevelder">Commander</a></div>
-    <div class="card sussex-brown show"><img src="assets/images/poules/sussex-brown.jpg" alt="Sussex Brown"><h3>Sussex Brown</h3><p class="price">$60</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Sussex%20Brown">Commander</a></div>
-    <div class="card orpington-black show"><img src="assets/images/poules/orpington-black.jpg" alt="Orpington Black"><h3>Orpington Black</h3><p class="price">$62</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Orpington%20Black">Commander</a></div>
+    <div class="card silkie show"><img src="assets/images/poules/silkie.jpg" alt="Silkie"><h3>Silkie</h3><p class="price">$60</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Silkie">Commander</a></div>
+    <div class="card cream-legbar show"><img src="assets/images/poules/cream-legbar.jpg" alt="Cream Legbar"><h3>Cream Legbar</h3><p class="price">$55</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Cream%20Legbar">Commander</a></div>
+    <div class="card isa-brown show"><img src="assets/images/poules/isa-brown.jpg" alt="ISA Brown"><h3>ISA Brown</h3><p class="price">$50</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20ISA%20Brown">Commander</a></div>
+    <div class="card leghorn show"><img src="assets/images/poules/leghorn.jpg" alt="Leghorn"><h3>Leghorn</h3><p class="price">$65</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Leghorn">Commander</a></div>
+    <div class="card sussex show"><img src="assets/images/poules/sussex.jpg" alt="Sussex"><h3>Sussex</h3><p class="price">$70</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Sussex">Commander</a></div>
+    <div class="card orpington show"><img src="assets/images/poules/orpington.jpg" alt="Orpington"><h3>Orpington</h3><p class="price">$80</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Orpington">Commander</a></div>
+    <div class="card plymouth-rock show"><img src="assets/images/poules/plymouth-rock.jpg" alt="Plymouth Rock"><h3>Plymouth Rock</h3><p class="price">$75</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Plymouth%20Rock">Commander</a></div>
+    <div class="card ameraucana show"><img src="assets/images/poules/ameraucana.jpg" alt="Ameraucana"><h3>Ameraucana</h3><p class="price">$65</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Ameraucana">Commander</a></div>
+    <div class="card faverolles show"><img src="assets/images/poules/faverolles.jpg" alt="Faverolles"><h3>Faverolles</h3><p class="price">$70</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Faverolles">Commander</a></div>
+    <div class="card rhode-island-red show"><img src="assets/images/poules/rhode-island-red.jpg" alt="Rhode Island Red"><h3>Rhode Island Red</h3><p class="price">$55</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Rhode%20Island%20Red">Commander</a></div>
+    <div class="card wyandotte show"><img src="assets/images/poules/wyandotte.jpg" alt="Wyandotte"><h3>Wyandotte</h3><p class="price">$60</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Wyandotte">Commander</a></div>
+    <div class="card australorp show"><img src="assets/images/poules/australorp.jpg" alt="Australorp"><h3>Australorp</h3><p class="price">$65</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Australorp">Commander</a></div>
+    <div class="card marans show"><img src="assets/images/poules/marans.jpg" alt="Marans"><h3>Marans</h3><p class="price">$70</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Marans">Commander</a></div>
+    <div class="card cochin show"><img src="assets/images/poules/cochin.jpg" alt="Cochin"><h3>Cochin</h3><p class="price">$75</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Cochin">Commander</a></div>
+    <div class="card ancona show"><img src="assets/images/poules/ancona.jpg" alt="Ancona"><h3>Ancona</h3><p class="price">$60</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Ancona">Commander</a></div>
+    <div class="card hamburg show"><img src="assets/images/poules/hamburg.jpg" alt="Hamburg"><h3>Hamburg</h3><p class="price">$55</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Hamburg">Commander</a></div>
+    <div class="card sussex-light show"><img src="assets/images/poules/sussex-light.jpg" alt="Sussex Light"><h3>Sussex Light</h3><p class="price">$60</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Sussex%20Light">Commander</a></div>
+    <div class="card polish show"><img src="assets/images/poules/polish.jpg" alt="Polish"><h3>Polish</h3><p class="price">$65</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Polish">Commander</a></div>
+    <div class="card campine show"><img src="assets/images/poules/campine.jpg" alt="Campine"><h3>Campine</h3><p class="price">$55</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Campine">Commander</a></div>
+    <div class="card langshan show"><img src="assets/images/poules/langshan.jpg" alt="Langshan"><h3>Langshan</h3><p class="price">$70</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Langshan">Commander</a></div>
+    <div class="card appenzeller show"><img src="assets/images/poules/appenzeller.jpg" alt="Appenzeller"><h3>Appenzeller</h3><p class="price">$75</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Appenzeller">Commander</a></div>
+    <div class="card barnevelder show"><img src="assets/images/poules/barnevelder.jpg" alt="Barnevelder"><h3>Barnevelder</h3><p class="price">$65</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Barnevelder">Commander</a></div>
+    <div class="card sussex-brown show"><img src="assets/images/poules/sussex-brown.jpg" alt="Sussex Brown"><h3>Sussex Brown</h3><p class="price">$70</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Sussex%20Brown">Commander</a></div>
+    <div class="card orpington-black show"><img src="assets/images/poules/orpington-black.jpg" alt="Orpington Black"><h3>Orpington Black</h3><p class="price">$80</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Orpington%20Black">Commander</a></div>
     <div class="card andalusian show"><img src="assets/images/poules/andalusian.jpg" alt="Andalusian"><h3>Andalusian</h3><p class="price">$65</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Andalusian">Commander</a></div>
-    <div class="card crevecoeur show"><img src="assets/images/poules/crevecoeur.jpg" alt="Crevecoeur"><h3>Crevecoeur</h3><p class="price">$60</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Crevecoeur">Commander</a></div>
-    <div class="card houdan show"><img src="assets/images/poules/houdan.jpg" alt="Houdan"><h3>Houdan</h3><p class="price">$55</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Houdan">Commander</a></div>
-    <div class="card sebright show"><img src="assets/images/poules/sebright.jpg" alt="Sebright"><h3>Sebright</h3><p class="price">$50</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Sebright">Commander</a></div>
-    <div class="card new-hampshire show"><img src="assets/images/poules/new-hampshire.jpg" alt="New Hampshire"><h3>New Hampshire</h3><p class="price">$55</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20New%20Hampshire">Commander</a></div>
-
+    <div class="card crevecoeur show"><img src="assets/images/poules/crevecoeur.jpg" alt="Crevecoeur"><h3>Crevecoeur</h3><p class="price">$70</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Crevecoeur">Commander</a></div>
+    <div class="card houdan show"><img src="assets/images/poules/houdan.jpg" alt="Houdan"><h3>Houdan</h3><p class="price">$75</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Houdan">Commander</a></div>
+    <div class="card sebright show"><img src="assets/images/poules/sebright.jpg" alt="Sebright"><h3>Sebright</h3><p class="price">$60</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Sebright">Commander</a></div>
+    <div class="card new-hampshire show"><img src="assets/images/poules/new-hampshire.jpg" alt="New Hampshire"><h3>New Hampshire</h3><p class="price">$65</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20New%20Hampshire">Commander</a></div>
   </div>
+
 </section>
 
 <footer>
   <p>© 2026 Golden Poultry Farm</p>
 </footer>
 
-<script>
-function filterSelection(c) {
-  let cards = document.getElementsByClassName('card');
-  if(c === 'all') c = '';
-  for(let i=0;i<cards.length;i++){
-    removeClass(cards[i],'show');
-    if(cards[i].className.indexOf(c) > -1) addClass(cards[i],'show');
-  }
-}
-function addClass(element,name){
-  let arr1 = element.className.split(" ");
-  if(arr1.indexOf(name) == -1){element
+<script src="assets/js/script.js"></script>
+</body>
+</html>
