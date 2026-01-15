@@ -8,124 +8,66 @@
 </head>
 <body>
 
-<header>
-  <h1>Golden Poultry Farm</h1>
-  <p>Premium Chicken Breeds • Georgia, USA</p>
+<nav>
+  <h1>🐔 Golden Poultry Farm</h1>
+</nav>
+
+<header class="hero">
+  <h2>Premium Chicken Breeds</h2>
+  <p>Georgia, USA • Quality • Trust • Worldwide Clients</p>
 </header>
 
-<section class="container">
-  <h2>Available Chickens</h2>
+<section class="controls">
+  <input type="text" id="search" placeholder="Search chicken breed...">
+  <select id="priceFilter">
+    <option value="all">All prices</option>
+    <option value="low">Under $40</option>
+    <option value="mid">$40 - $60</option>
+    <option value="high">Above $60</option>
+  </select>
+</section>
 
-  <div class="grid">
+<section class="container">
+  <div class="grid" id="chickenGrid">
 
     <!-- CARD -->
-    <div class="card">
-      <img src="assets/images/poules/cream-legbar.jpg">
-      <div class="card-content">
-        <h3>Cream Legbar</h3>
-        <p class="details">Blue eggs • 5 months</p>
-        <p class="price">$60</p>
-        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Cream%20Legbar">Commander</a>
-      </div>
-    </div>
-
-    <div class="card">
+    <div class="card" data-name="brahma" data-price="75">
       <img src="assets/images/poules/brahma.jpg">
       <div class="card-content">
         <h3>Brahma</h3>
-        <p class="details">Large breed • Brown eggs</p>
+        <p>Large breed • Calm</p>
         <p class="price">$75</p>
         <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Brahma">Commander</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card" data-name="silkie" data-price="55">
       <img src="assets/images/poules/silkie.jpg">
       <div class="card-content">
         <h3>Silkie</h3>
-        <p class="details">Ornamental • Cream eggs</p>
+        <p>Ornamental • Soft feathers</p>
         <p class="price">$55</p>
         <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Silkie">Commander</a>
       </div>
     </div>
 
-    <div class="card">
-      <img src="assets/images/poules/rhode-island-red.jpg">
+    <div class="card" data-name="cream legbar" data-price="60">
+      <img src="assets/images/poules/cream-legbar.jpg">
       <div class="card-content">
-        <h3>Rhode Island Red</h3>
-        <p class="details">High production</p>
-        <p class="price">$40</p>
-        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Rhode%20Island%20Red">Commander</a>
+        <h3>Cream Legbar</h3>
+        <p>Blue eggs</p>
+        <p class="price">$60</p>
+        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Cream%20Legbar">Commander</a>
       </div>
     </div>
 
-    <div class="card">
-      <img src="assets/images/poules/leghorn.jpg">
-      <div class="card-content">
-        <h3>White Leghorn</h3>
-        <p class="details">White eggs</p>
-        <p class="price">$35</p>
-        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20White%20Leghorn">Commander</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="assets/images/poules/sussex.jpg">
-      <div class="card-content">
-        <h3>Sussex</h3>
-        <p class="details">Rustic breed</p>
-        <p class="price">$38</p>
-        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Sussex">Commander</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="assets/images/poules/orpington.jpg">
-      <div class="card-content">
-        <h3>Buff Orpington</h3>
-        <p class="details">Calm & productive</p>
-        <p class="price">$55</p>
-        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Buff%20Orpington">Commander</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="assets/images/poules/plymouth-rock.jpg">
-      <div class="card-content">
-        <h3>Plymouth Rock</h3>
-        <p class="details">Dual purpose</p>
-        <p class="price">$45</p>
-        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Plymouth%20Rock">Commander</a>
-      </div>
-    </div>
-
-    <div class="card">
+    <div class="card" data-name="isa brown" data-price="30">
       <img src="assets/images/poules/isa-brown.jpg">
       <div class="card-content">
         <h3>ISA Brown</h3>
-        <p class="details">Very high laying</p>
+        <p>Very productive</p>
         <p class="price">$30</p>
         <a class="btn" href="https://wa.me/237687452478?text=I%20want%20ISA%20Brown">Commander</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="assets/images/poules/ameraucana.jpg">
-      <div class="card-content">
-        <h3>Ameraucana</h3>
-        <p class="details">Blue eggs</p>
-        <p class="price">$48</p>
-        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Ameraucana">Commander</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="assets/images/poules/faverolles.jpg">
-      <div class="card-content">
-        <h3>Faverolles</h3>
-        <p class="details">French breed</p>
-        <p class="price">$52</p>
-        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Faverolles">Commander</a>
       </div>
     </div>
 
@@ -133,8 +75,9 @@
 </section>
 
 <footer>
-  <p>© 2026 Golden Poultry Farm • WhatsApp Orders Only</p>
+  <p>© 2026 Golden Poultry Farm | Orders via WhatsApp</p>
 </footer>
 
+<script src="assets/js/script.js"></script>
 </body>
-          </html>
+  </html>
