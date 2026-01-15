@@ -1,24 +1,24 @@
-const search = document.getElementById("search");
-const priceFilter = document.getElementById("priceFilter");
-const cards = document.querySelectorAll(".card");
-
-function filterCards() {
-  const text = search.value.toLowerCase();
-  const price = priceFilter.value;
-
-  cards.forEach(card => {
-    const name = card.dataset.name;
-    const cardPrice = parseInt(card.dataset.price);
-
-    let visible = name.includes(text);
-
-    if (price === "low") visible &= cardPrice < 40;
-    if (price === "mid") visible &= cardPrice >= 40 && cardPrice <= 60;
-    if (price === "high") visible &= cardPrice > 60;
-
-    card.style.display = visible ? "block" : "none";
-  });
+function filterSelection(c){
+  let cards = document.getElementsByClassName('card');
+  if(c === 'all') c = '';
+  for(let i=0;i<cards.length;i++){
+    removeClass(cards[i],'show');
+    if(cards[i].className.indexOf(c) > -1) addClass(cards[i],'show');
+  }
 }
 
-search.addEventListener("input", filterCards);
-priceFilter.addEventListener("change", filterCards);
+function addClass(element,name){
+  let arr = element.className.split(" ");
+  if(arr.indexOf(name) === -1){element.className += " " + name;}
+}
+
+function removeClass(element,name){
+  let arr = element.className.split(" ");
+  while(arr.indexOf(name) > -1){
+    arr.splice(arr.indexOf(name),1);
+  }
+  element.className = arr.join(" ");
+}
+
+// Afficher toutes les poules au chargement
+filterSelection('all');
