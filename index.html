@@ -1,58 +1,193 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Golden Poultry Farm | Georgia USA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Golden Poultry Farm</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7f5;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #b8860b, #ffd700);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 15px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .intro p {
+      max-width: 800px;
+      margin: auto;
+      color: #555;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #6b8e23;
+      margin: 10px 0 5px;
+    }
+
+    .details {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+      color: #000;
+    }
+
+    .status {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .available {
+      color: green;
+    }
+
+    .out {
+      color: red;
+    }
+
+    .btn {
+      display: block;
+      background: #25d366;
+      color: #fff;
+      padding: 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
   <h1>Golden Poultry Farm</h1>
-  <p>Découvrez toutes nos races de poules avec leurs prix</p>
-  <a class="btn" href="https://wa.me/237687452478?text=Bonjour%20je%20souhaite%20commander">Commander via WhatsApp</a>
+  <p>Premium Chicken Breeds • Georgia, USA</p>
 </header>
 
-<section>
-  <h2>Nos Poules</h2>
-  <div class="grid">
-    <div class="card">
-      <span class="badge">Best Seller</span>
-      <img src="assets/images/broiler.jpg" alt="Broiler">
-      <h3>Broiler</h3>
-      <p class="muted">Race : Broiler</p>
-      <div class="price">5 000 FCFA</div>
-      <a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Broiler">Commander</a>
-    </div>
-    <div class="card">
-      <span class="badge">Nouvelle Race</span>
-      <img src="assets/images/layer.jpg" alt="Layer">
-      <h3>Layer</h3>
-      <p class="muted">Race : Ponduse</p>
-      <div class="price">6 000 FCFA</div>
-      <a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Layer">Commander</a>
-    </div>
-    <div class="card">
-      <img src="assets/images/free-range.jpg" alt="Free-range">
-      <h3>Free-range</h3>
-      <p class="muted">Race : Plein air</p>
-      <div class="price">7 000 FCFA</div>
-      <a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Free-range">Commander</a>
-    </div>
-    <div class="card">
-      <img src="assets/images/special.jpg" alt="Special">
-      <h3>Special</h3>
-      <p class="muted">Race : Rare</p>
-      <div class="price">10 000 FCFA</div>
-      <a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Special">Commander</a>
-    </div>
+<div class="container">
+
+  <div class="intro">
+    <h2>Our Chicken Selection</h2>
+    <p>
+      Golden Poultry Farm offers a wide selection of premium, healthy and well-raised chickens.
+      All breeds are carefully selected for quality, productivity and adaptability.
+    </p>
   </div>
-</section>
+
+  <div class="grid">
+
+    <!-- EXEMPLE DE CARTE (tu peux dupliquer) -->
+
+    <div class="card">
+      <img src="assets/images/poules/legbar.jpg" alt="Cream Legbar">
+      <div class="card-content">
+        <h3>Cream Legbar</h3>
+        <p class="details">5 months • Blue eggs</p>
+        <p class="price">$45</p>
+        <p class="status out">Out of stock</p>
+        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20the%20Cream%20Legbar">Commander</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/poules/brahma.jpg" alt="Brahma">
+      <div class="card-content">
+        <h3>Brahma</h3>
+        <p class="details">6 months • Brown eggs</p>
+        <p class="price">$60</p>
+        <p class="status available">Available</p>
+        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20the%20Brahma">Commander</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/poules/silkie.jpg" alt="Silkie">
+      <div class="card-content">
+        <h3>Silkie</h3>
+        <p class="details">4 months • Cream eggs</p>
+        <p class="price">$50</p>
+        <p class="status available">Available</p>
+        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20the%20Silkie">Commander</a>
+      </div>
+    </div>
+
+    <!-- TU PEUX AJOUTER LES AUTRES POULES ICI (jusqu’à 30) -->
+
+  </div>
+</div>
 
 <footer>
-  <p>Contactez-nous via WhatsApp pour toutes commandes et informations.</p>
-  <p>© 2026 Golden Poultry Farm</p>
+  <p>Contact us via WhatsApp or Email</p>
+  <p>© 2026 Golden Poultry Farm – Georgia, USA</p>
 </footer>
 
 </body>
