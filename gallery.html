@@ -1,61 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Gallery | Golden Poultry Farm</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golden Poultry Farm - Galerie Pro</title>
 <link rel="stylesheet" href="assets/css/style.css">
+<style>
+:root{
+  --bg:#fff8f0; --card:#fff; --txt:#333; --accent:#d4af37; --btn:#d4af37; --btn-hover:#bfa12c;
+}
+
+body{background:var(--bg);color:var(--txt);font-family:Georgia, serif;margin:0;padding:0;}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;background:var(--accent);color:#fff;}
+nav h1{font-size:24px;}
+nav .menu a{margin-left:20px;color:#fff;text-decoration:none;font-weight:bold;}
+.hero{padding:60px 20px;text-align:center;background:#fdf2e3;}
+.hero h2{font-size:36px;margin-bottom:10px;}
+.hero p{font-size:18px;margin-bottom:20px;}
+.btn{display:inline-block;background:var(--btn);color:#fff;padding:10px 20px;border-radius:10px;text-decoration:none;font-weight:bold;transition:0.3s;}
+.btn:hover{background:var(--btn-hover);}
+.container{max-width:1200px;margin:auto;padding:20px;}
+.filters{margin-bottom:20px;text-align:center;}
+.filters button{margin:5px;padding:8px 16px;border:none;background:var(--accent);color:#fff;border-radius:8px;cursor:pointer;font-weight:bold;transition:0.3s;}
+.filters button:hover{background:var(--btn-hover);}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.card{background:var(--card);padding:10px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.1);text-align:center;transition:0.3s;}
+.card img{width:100%;border-radius:10px;margin-bottom:10px;transition:transform 0.3s;}
+.card:hover img{transform:scale(1.05);}
+.card h3{margin-bottom:5px;color:var(--accent);}
+.price{font-weight:bold;font-size:18px;margin-bottom:10px;}
+.badge{display:inline-block;background:#ff3b3b;color:#fff;font-size:12px;font-weight:bold;padding:4px 8px;border-radius:999px;margin-bottom:10px;}
+footer{text-align:center;padding:20px;background:#f5f5f5;color:var(--txt);}
+</style>
 </head>
 <body>
 
 <nav>
   <h1>🐔 Golden Poultry Farm</h1>
   <div class="menu">
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
+    <a href="index.html">Accueil</a>
+    <a href="gallery.html">Galerie</a>
     <a href="contact.html">Contact</a>
   </div>
 </nav>
 
 <header class="hero">
-  <h2>Our Chicken Gallery</h2>
-  <p>Premium breeds • Healthy • Well raised</p>
+  <h2>Galerie Pro des Poules</h2>
+  <p>Filtrez par race ou par prix pour trouver votre poule idéale</p>
 </header>
 
 <section class="container">
+
+  <!-- FILTRES -->
+  <div class="filters">
+    <button onclick="filterSelection('all')">Toutes</button>
+    <button onclick="filterSelection('brahma')">Brahma</button>
+    <button onclick="filterSelection('silkie')">Silkie</button>
+    <button onclick="filterSelection('leghorn')">Leghorn</button>
+    <button onclick="filterSelection('sussex')">Sussex</button>
+    <button onclick="filterSelection('orpington')">Orpington</button>
+  </div>
+
   <div class="grid">
 
-    <!-- COPIE CE BLOC POUR AJOUTER JUSQU’À 30 POULES -->
-    <div class="card">
-      <img src="assets/images/poules/brahma.jpg">
-      <div class="card-content">
-        <h3>Brahma</h3>
-        <p class="price">$75</p>
-      </div>
+    <!-- Exemples de Poules -->
+    <div class="card brahma">
+      <span class="badge">Meilleure offre</span>
+      <img src="assets/images/poules/brahma.jpg" alt="Brahma">
+      <h3>Brahma</h3>
+      <p class="price">$75</p>
+      <a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Brahma">Commander</a>
     </div>
 
-    <div class="card">
-      <img src="assets/images/poules/silkie.jpg">
-      <div class="card-content">
-        <h3>Silkie</h3>
-        <p class="price">$55</p>
-      </div>
+    <div class="card silkie">
+      <img src="assets/images/poules/silkie.jpg" alt="Silkie">
+      <h3>Silkie</h3>
+      <p class="price">$55</p>
+      <a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Silkie">Commander</a>
     </div>
 
-    <div class="card">
-      <img src="assets/images/poules/cream-legbar.jpg">
-      <div class="card-content">
-        <h3>Cream Legbar</h3>
-        <p class="price">$60</p>
-      </div>
+    <div class="card leghorn">
+      <img src="assets/images/poules/leghorn.jpg" alt="Leghorn">
+      <h3>Leghorn</h3>
+      <p class="price">$35</p>
+      <a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Leghorn">Commander</a>
     </div>
 
+    <div class="card sussex">
+      <img src="assets/images/poules/sussex.jpg" alt="Sussex">
+      <h3>Sussex</h3>
+      <p class="price">$38</p>
+      <a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Sussex">Commander</a>
+    </div>
+
+    <div class="card orpington">
+      <img src="assets/images/poules/orpington.jpg" alt="Orpington">
+      <h3>Orpington</h3>
+      <p class="price">$50</p>
+      <a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Orpington">Commander</a>
+    </div>
+
+    <!-- Ajoute ici les autres 25 poules comme précédemment -->
   </div>
+
 </section>
 
 <footer>
   <p>© 2026 Golden Poultry Farm</p>
 </footer>
 
+<script>
+function filterSelection(c) {
+  let cards = document.getElementsByClassName('card');
+  if(c === 'all') c = '';
+  for(let i=0;i<cards.length;i++){
+    removeClass(cards[i],'show');
+    if(cards[i].className.indexOf(c) > -1) addClass(cards[i],'show');
+  }
+}
+
+function addClass(element,name){
+  let arr1 = element.className.split(" ");
+  if(arr1.indexOf(name) == -1){element.className += " " + name;}
+}
+function removeClass(element,name){
+  let arr1 = element.className.split(" ");
+  while(arr1.indexOf(name) > -1){
+    arr1.splice(arr1.indexOf(name),1);
+  }
+  element.className = arr1.join(" ");
+}
+
+// Initial show all
+filterSelection('all');
+</script>
+
 </body>
-    </html>
+        </html>
