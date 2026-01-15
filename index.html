@@ -2,130 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Golden Poultry Farm | Georgia USA</title>
+  <title>Golden Poultry Farm</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7f5;
-      color: #222;
-    }
-
-    header {
-      background: linear-gradient(135deg, #b8860b, #ffd700);
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 18px;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 30px 15px;
-    }
-
-    .intro {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .intro p {
-      max-width: 800px;
-      margin: auto;
-      color: #555;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 14px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      padding: 15px;
-      text-align: center;
-    }
-
-    .card h3 {
-      color: #6b8e23;
-      margin: 10px 0 5px;
-    }
-
-    .details {
-      font-size: 14px;
-      color: #666;
-    }
-
-    .price {
-      font-size: 20px;
-      font-weight: bold;
-      margin: 10px 0;
-      color: #000;
-    }
-
-    .status {
-      font-size: 13px;
-      margin-bottom: 10px;
-    }
-
-    .available {
-      color: green;
-    }
-
-    .out {
-      color: red;
-    }
-
-    .btn {
-      display: block;
-      background: #25d366;
-      color: #fff;
-      padding: 12px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    footer {
-      background: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 25px;
-      margin-top: 50px;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
 <header>
@@ -133,62 +13,128 @@
   <p>Premium Chicken Breeds • Georgia, USA</p>
 </header>
 
-<div class="container">
-
-  <div class="intro">
-    <h2>Our Chicken Selection</h2>
-    <p>
-      Golden Poultry Farm offers a wide selection of premium, healthy and well-raised chickens.
-      All breeds are carefully selected for quality, productivity and adaptability.
-    </p>
-  </div>
+<section class="container">
+  <h2>Available Chickens</h2>
 
   <div class="grid">
 
-    <!-- EXEMPLE DE CARTE (tu peux dupliquer) -->
-
+    <!-- CARD -->
     <div class="card">
-      <img src="assets/images/poules/legbar.jpg" alt="Cream Legbar">
+      <img src="assets/images/poules/cream-legbar.jpg">
       <div class="card-content">
         <h3>Cream Legbar</h3>
-        <p class="details">5 months • Blue eggs</p>
-        <p class="price">$45</p>
-        <p class="status out">Out of stock</p>
-        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20the%20Cream%20Legbar">Commander</a>
+        <p class="details">Blue eggs • 5 months</p>
+        <p class="price">$60</p>
+        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Cream%20Legbar">Commander</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="assets/images/poules/brahma.jpg" alt="Brahma">
+      <img src="assets/images/poules/brahma.jpg">
       <div class="card-content">
         <h3>Brahma</h3>
-        <p class="details">6 months • Brown eggs</p>
-        <p class="price">$60</p>
-        <p class="status available">Available</p>
-        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20the%20Brahma">Commander</a>
+        <p class="details">Large breed • Brown eggs</p>
+        <p class="price">$75</p>
+        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Brahma">Commander</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="assets/images/poules/silkie.jpg" alt="Silkie">
+      <img src="assets/images/poules/silkie.jpg">
       <div class="card-content">
         <h3>Silkie</h3>
-        <p class="details">4 months • Cream eggs</p>
-        <p class="price">$50</p>
-        <p class="status available">Available</p>
-        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20the%20Silkie">Commander</a>
+        <p class="details">Ornamental • Cream eggs</p>
+        <p class="price">$55</p>
+        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Silkie">Commander</a>
       </div>
     </div>
 
-    <!-- TU PEUX AJOUTER LES AUTRES POULES ICI (jusqu’à 30) -->
+    <div class="card">
+      <img src="assets/images/poules/rhode-island-red.jpg">
+      <div class="card-content">
+        <h3>Rhode Island Red</h3>
+        <p class="details">High production</p>
+        <p class="price">$40</p>
+        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Rhode%20Island%20Red">Commander</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/poules/leghorn.jpg">
+      <div class="card-content">
+        <h3>White Leghorn</h3>
+        <p class="details">White eggs</p>
+        <p class="price">$35</p>
+        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20White%20Leghorn">Commander</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/poules/sussex.jpg">
+      <div class="card-content">
+        <h3>Sussex</h3>
+        <p class="details">Rustic breed</p>
+        <p class="price">$38</p>
+        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Sussex">Commander</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/poules/orpington.jpg">
+      <div class="card-content">
+        <h3>Buff Orpington</h3>
+        <p class="details">Calm & productive</p>
+        <p class="price">$55</p>
+        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Buff%20Orpington">Commander</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/poules/plymouth-rock.jpg">
+      <div class="card-content">
+        <h3>Plymouth Rock</h3>
+        <p class="details">Dual purpose</p>
+        <p class="price">$45</p>
+        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Plymouth%20Rock">Commander</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/poules/isa-brown.jpg">
+      <div class="card-content">
+        <h3>ISA Brown</h3>
+        <p class="details">Very high laying</p>
+        <p class="price">$30</p>
+        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20ISA%20Brown">Commander</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/poules/ameraucana.jpg">
+      <div class="card-content">
+        <h3>Ameraucana</h3>
+        <p class="details">Blue eggs</p>
+        <p class="price">$48</p>
+        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Ameraucana">Commander</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/poules/faverolles.jpg">
+      <div class="card-content">
+        <h3>Faverolles</h3>
+        <p class="details">French breed</p>
+        <p class="price">$52</p>
+        <a class="btn" href="https://wa.me/237687452478?text=I%20want%20Faverolles">Commander</a>
+      </div>
+    </div>
 
   </div>
-</div>
+</section>
 
 <footer>
-  <p>Contact us via WhatsApp or Email</p>
-  <p>© 2026 Golden Poultry Farm – Georgia, USA</p>
+  <p>© 2026 Golden Poultry Farm • WhatsApp Orders Only</p>
 </footer>
 
 </body>
-</html>
+          </html>
