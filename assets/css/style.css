@@ -1,126 +1,41 @@
-/* ==============================
-   STYLE PRINCIPAL - Golden Poultry Farm
-   ============================== */
-
-:root {
-  --bg: #fdfaf6;           /* Couleur de fond clair */
-  --card: #fff;             /* Fond des cartes */
-  --txt: #111;              /* Texte principal */
-  --muted: #555;            /* Texte secondaire */
-  --accent: #ffcc00;        /* Couleur principale dorée */
-  --badge: #ff3b3b;         /* Badge rouge */
-  --btn: #ffcc00;           /* Bouton doré */
-  --btn-hover: #e6b800;     /* Bouton hover doré foncé */
-}
-
-/* ==============================
-   RESET & TYPOGRAPHIE
-   ============================== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Georgia', serif;
-}
-
 body {
-  background: var(--bg);
-  color: var(--txt);
-  line-height: 1.6;
+  font-family: 'Georgia', serif;
+  background: #fdfaf6;
+  color: #111;
 }
 
-h1, h2, h3 {
-  color: var(--accent);
-}
-
-p {
-  color: var(--muted);
-  font-size: 16px;
-}
-
-/* ==============================
-   HEADER
-   ============================== */
 header {
-  background: var(--accent);
-  color: #fff;
   text-align: center;
+  background: #ffcc00;
+  color: #fff;
   padding: 50px 20px;
 }
 
-header h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 18px;
-  max-width: 700px;
-  margin: auto;
-}
+header h1 { font-size: 36px; margin-bottom: 10px; }
+header p { font-size: 18px; margin-bottom: 20px; }
 
 header .btn {
-  display: inline-block;
-  margin-top: 20px;
   padding: 15px 30px;
-  background: #25d366; /* WhatsApp green */
+  background: #25d366;
   color: #fff;
-  text-decoration: none;
-  font-weight: bold;
   border-radius: 12px;
-  transition: background 0.3s;
-}
-
-header .btn:hover {
-  background: #1ebe57;
-}
-
-/* ==============================
-   NAVIGATION SIMPLE
-   ============================== */
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--txt);
   font-weight: bold;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: var(--accent);
-}
-
-/* ==============================
-   SECTIONS & GRILLE
-   ============================== */
-section {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 0 20px;
+  text-decoration: none;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
+  padding: 40px 20px;
 }
 
-/* ==============================
-   CARDS
-   ============================== */
 .card {
-  background: var(--card);
-  padding: 20px;
+  background: #fff;
   border-radius: 15px;
+  padding: 20px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -131,32 +46,22 @@ section {
 
 .card img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 12px;
   margin-bottom: 15px;
 }
 
-.card h3 {
-  margin-bottom: 10px;
-}
-
 .price {
   font-size: 20px;
+  color: #ffcc00;
   font-weight: bold;
-  color: var(--accent);
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
-.muted {
-  font-size: 14px;
-  color: var(--muted);
-}
-
-/* ==============================
-   BADGES
-   ============================== */
 .badge {
   display: inline-block;
-  background: var(--badge);
+  background: #ff3b3b;
   color: #fff;
   font-size: 12px;
   font-weight: bold;
@@ -165,33 +70,9 @@ section {
   margin-bottom: 10px;
 }
 
-/* ==============================
-   BOUTONS DANS LES CARTES
-   ============================== */
-.card .btn {
-  display: inline-block;
-  background: var(--btn);
-  color: #111;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.card .btn:hover {
-  background: var(--btn-hover);
-  color: #fff;
-}
-
-/* ==============================
-   FOOTER
-   ============================== */
 footer {
   text-align: center;
   padding: 40px 20px;
+  color: #555;
   background: #fff;
-  color: var(--muted);
-  font-size: 14px;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
-  }
+}
