@@ -31,6 +31,8 @@ nav .menu a{margin-left:20px;color:#fff;text-decoration:none;font-weight:bold;}
 .price{font-weight:bold;font-size:18px;margin-bottom:10px;}
 .badge{display:inline-block;background:#ff3b3b;color:#fff;font-size:12px;font-weight:bold;padding:4px 8px;border-radius:999px;margin-bottom:10px;}
 footer{text-align:center;padding:20px;background:#f5f5f5;color:var(--txt);}
+.show{display:block !important;}
+.card{display:none;}
 </style>
 </head>
 <body>
@@ -59,50 +61,48 @@ footer{text-align:center;padding:20px;background:#f5f5f5;color:var(--txt);}
     <button onclick="filterSelection('leghorn')">Leghorn</button>
     <button onclick="filterSelection('sussex')">Sussex</button>
     <button onclick="filterSelection('orpington')">Orpington</button>
+    <button onclick="filterSelection('plymouth-rock')">Plymouth Rock</button>
+    <button onclick="filterSelection('ameraucana')">Ameraucana</button>
+    <button onclick="filterSelection('faverolles')">Faverolles</button>
+    <button onclick="filterSelection('isa-brown')">ISA Brown</button>
   </div>
 
   <div class="grid">
 
-    <!-- Exemples de Poules -->
-    <div class="card brahma">
-      <span class="badge">Meilleure offre</span>
-      <img src="assets/images/poules/brahma.jpg" alt="Brahma">
-      <h3>Brahma</h3>
-      <p class="price">$75</p>
-      <a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Brahma">Commander</a>
-    </div>
+    <!-- 30 poules -->
+    <div class="card brahma"><span class="badge">Meilleure offre</span><img src="assets/images/poules/brahma.jpg" alt="Brahma"><h3>Brahma</h3><p class="price">$75</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Brahma">Commander</a></div>
+    <div class="card silkie"><img src="assets/images/poules/silkie.jpg" alt="Silkie"><h3>Silkie</h3><p class="price">$55</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Silkie">Commander</a></div>
+    <div class="card cream-legbar"><img src="assets/images/poules/cream-legbar.jpg" alt="Cream Legbar"><h3>Cream Legbar</h3><p class="price">$60</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Cream%20Legbar">Commander</a></div>
+    <div class="card isa-brown"><img src="assets/images/poules/isa-brown.jpg" alt="ISA Brown"><h3>ISA Brown</h3><p class="price">$30</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20ISA%20Brown">Commander</a></div>
+    <div class="card leghorn"><img src="assets/images/poules/leghorn.jpg" alt="Leghorn"><h3>Leghorn</h3><p class="price">$35</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Leghorn">Commander</a></div>
+    <div class="card sussex"><img src="assets/images/poules/sussex.jpg" alt="Sussex"><h3>Sussex</h3><p class="price">$38</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Sussex">Commander</a></div>
+    <div class="card orpington"><img src="assets/images/poules/orpington.jpg" alt="Orpington"><h3>Orpington</h3><p class="price">$50</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Orpington">Commander</a></div>
+    <div class="card plymouth-rock"><img src="assets/images/poules/plymouth-rock.jpg" alt="Plymouth Rock"><h3>Plymouth Rock</h3><p class="price">$45</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Plymouth%20Rock">Commander</a></div>
+    <div class="card ameraucana"><img src="assets/images/poules/ameraucana.jpg" alt="Ameraucana"><h3>Ameraucana</h3><p class="price">$55</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Ameraucana">Commander</a></div>
+    <div class="card faverolles"><img src="assets/images/poules/faverolles.jpg" alt="Faverolles"><h3>Faverolles</h3><p class="price">$60</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Faverolles">Commander</a></div>
+    
+    <div class="card rhode-island-red"><img src="assets/images/poules/rhode-island-red.jpg" alt="Rhode Island Red"><h3>Rhode Island Red</h3><p class="price">$40</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Rhode%20Island%20Red">Commander</a></div>
+    <div class="card wyandotte"><img src="assets/images/poules/wyandotte.jpg" alt="Wyandotte"><h3>Wyandotte</h3><p class="price">$45</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Wyandotte">Commander</a></div>
+    <div class="card australorp"><img src="assets/images/poules/australorp.jpg" alt="Australorp"><h3>Australorp</h3><p class="price">$50</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Australorp">Commander</a></div>
+    <div class="card marans"><img src="assets/images/poules/marans.jpg" alt="Marans"><h3>Marans</h3><p class="price">$55</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Marans">Commander</a></div>
+    <div class="card cochin"><img src="assets/images/poules/cochin.jpg" alt="Cochin"><h3>Cochin</h3><p class="price">$60</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Cochin">Commander</a></div>
+    <div class="card ancona"><img src="assets/images/poules/ancona.jpg" alt="Ancona"><h3>Ancona</h3><p class="price">$35</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Ancona">Commander</a></div>
+    <div class="card hamburg"><img src="assets/images/poules/hamburg.jpg" alt="Hamburg"><h3>Hamburg</h3><p class="price">$45</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Hamburg">Commander</a></div>
+    <div class="card sussex-light"><img src="assets/images/poules/sussex-light.jpg" alt="Sussex Light"><h3>Sussex Light</h3><p class="price">$38</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Sussex%20Light">Commander</a></div>
+    <div class="card polish"><img src="assets/images/poules/polish.jpg" alt="Polish"><h3>Polish</h3><p class="price">$50</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Polish">Commander</a></div>
+    <div class="card campine"><img src="assets/images/poules/campine.jpg" alt="Campine"><h3>Campine</h3><p class="price">$40</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Campine">Commander</a></div>
+    <div class="card langshan"><img src="assets/images/poules/langshan.jpg" alt="Langshan"><h3>Langshan</h3><p class="price">$55</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Langshan">Commander</a></div>
+    <div class="card appenzeller"><img src="assets/images/poules/appenzeller.jpg" alt="Appenzeller"><h3>Appenzeller</h3><p class="price">$45</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Appenzeller">Commander</a></div>
+    <div class="card barnevelder"><img src="assets/images/poules/barnevelder.jpg" alt="Barnevelder"><h3>Barnevelder</h3><p class="price">$50</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Barnevelder">Commander</a></div>
+    <div class="card sussex-brown"><img src="assets/images/poules/sussex-brown.jpg" alt="Sussex Brown"><h3>Sussex Brown</h3><p class="price">$38</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Sussex%20Brown">Commander</a></div>
+    <div class="card orpington-black"><img src="assets/images/poules/orpington-black.jpg" alt="Orpington Black"><h3>Orpington Black</h3><p class="price">$52</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Orpington%20Black">Commander</a></div>
+    <div class="card andalusian"><img src="assets/images/poules/andalusian.jpg" alt="Andalusian"><h3>Andalusian</h3><p class="price">$48</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Andalusian">Commander</a></div>
+    <div class="card crevecoeur"><img src="assets/images/poules/crevecoeur.jpg" alt="Crevecoeur"><h3>Crevecoeur</h3><p class="price">$55</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Crevecoeur">Commander</a></div>
+    <div class="card houdan"><img src="assets/images/poules/houdan.jpg" alt="Houdan"><h3>Houdan</h3><p class="price">$60</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Houdan">Commander</a></div>
+    <div class="card sebright"><img src="assets/images/poules/sebright.jpg" alt="Sebright"><h3>Sebright</h3><p class="price">$50</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Sebright">Commander</a></div>
+    <div class="card new-hampshire"><img src="assets/images/poules/new-hampshire.jpg" alt="New Hampshire"><h3>New Hampshire</h3><p class="price">$45</p><a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20New%20Hampshire">Commander</a></div>
 
-    <div class="card silkie">
-      <img src="assets/images/poules/silkie.jpg" alt="Silkie">
-      <h3>Silkie</h3>
-      <p class="price">$55</p>
-      <a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Silkie">Commander</a>
-    </div>
-
-    <div class="card leghorn">
-      <img src="assets/images/poules/leghorn.jpg" alt="Leghorn">
-      <h3>Leghorn</h3>
-      <p class="price">$35</p>
-      <a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Leghorn">Commander</a>
-    </div>
-
-    <div class="card sussex">
-      <img src="assets/images/poules/sussex.jpg" alt="Sussex">
-      <h3>Sussex</h3>
-      <p class="price">$38</p>
-      <a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Sussex">Commander</a>
-    </div>
-
-    <div class="card orpington">
-      <img src="assets/images/poules/orpington.jpg" alt="Orpington">
-      <h3>Orpington</h3>
-      <p class="price">$50</p>
-      <a class="btn" href="https://wa.me/237687452478?text=Je%20veux%20Orpington">Commander</a>
-    </div>
-
-    <!-- Ajoute ici les autres 25 poules comme précédemment -->
   </div>
-
 </section>
 
 <footer>
@@ -118,22 +118,17 @@ function filterSelection(c) {
     if(cards[i].className.indexOf(c) > -1) addClass(cards[i],'show');
   }
 }
-
 function addClass(element,name){
   let arr1 = element.className.split(" ");
   if(arr1.indexOf(name) == -1){element.className += " " + name;}
 }
 function removeClass(element,name){
   let arr1 = element.className.split(" ");
-  while(arr1.indexOf(name) > -1){
-    arr1.splice(arr1.indexOf(name),1);
-  }
+  while(arr1.indexOf(name) > -1){arr1.splice(arr1.indexOf(name),1);}
   element.className = arr1.join(" ");
 }
-
-// Initial show all
 filterSelection('all');
 </script>
 
 </body>
-        </html>
+                                                                                                                                                                                                                                    </html>
