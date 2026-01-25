@@ -1,105 +1,92 @@
-/* Styles généraux */
-:root{
-  --bg:#f4f4f8; 
-  --txt:#111; 
-  --accent:#ff6600; 
-  --wa:#25d366;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
 }
 
-*{box-sizing:border-box;margin:0;padding:0;font-family:Arial, sans-serif;}
-body{background:var(--bg);color:var(--txt);line-height:1.6;}
-nav{background:#fff;padding:20px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-nav h1{font-size:24px;color:var(--accent);}
-nav .menu a{margin-left:20px;text-decoration:none;color:var(--txt);font-weight:bold;}
-nav .menu a:hover{color:var(--accent);}
-
-/* Section Héros */
-.hero {
-  position: relative;
-  background-image: url('assets/images/fond-poules.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
-  padding: 150px 20px;
-  overflow: hidden;
+body{
+  background:#f4f6f8;
+  color:#222;
 }
 
-.hero .overlay {
-  position: absolute;
-  top:0; left:0;
+.header{
+  background:linear-gradient(135deg,#1f7a1f,#2ecc71);
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.chicken-card{
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.12);
+  transition:transform .3s;
+}
+
+.chicken-card:hover{
+  transform:translateY(-8px);
+}
+
+.chicken-card img{
   width:100%;
-  height:100%;
-  background: rgba(0,0,0,0.4);
-  z-index: 1;
+  height:220px;
+  object-fit:cover;
 }
 
-.hero h2, .hero p, .hero .btn {
-  position: relative;
-  z-index: 2;
+.chicken-card .content{
+  padding:15px;
+  text-align:center;
 }
 
-.hero .btn {
-  display:inline-block;
-  background:var(--wa);
-  color:#fff;
+.chicken-card h3{
+  margin-bottom:8px;
+}
+
+.price{
+  font-size:20px;
   font-weight:bold;
-  padding:12px 24px;
-  border-radius:12px;
+  color:#1f7a1f;
+  margin-bottom:12px;
+}
+
+.order-btn{
+  display:inline-block;
+  padding:10px 20px;
+  background:#25d366;
+  color:white;
   text-decoration:none;
-  margin-top:20px;
-  transition: transform 0.3s;
+  border-radius:25px;
+  font-weight:bold;
 }
 
-.hero .btn:hover {
-  transform: scale(1.1);
+.order-btn:hover{
+  background:#1ebe5d;
 }
 
-/* Animation poules */
-.hero .animated-chickens {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1;
+/* WhatsApp flottant */
+.whatsapp-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25d366;
+  color:white;
+  font-size:30px;
+  padding:15px;
+  border-radius:50%;
+  text-decoration:none;
+  box-shadow:0 8px 20px rgba(0,0,0,.3);
 }
-
-.hero .chick {
-  position: absolute;
-  width: 60px;
-  animation: floatChicken 20s linear infinite;
-}
-
-@keyframes floatChicken {
-  0% {transform: translateX(-100px) translateY(0);}
-  50% {transform: translateX(100vw) translateY(20px);}
-  100% {transform: translateX(-100px) translateY(0);}
-}
-
-.hero .chick:nth-child(1) { top: 20%; animation-duration: 25s; }
-.hero .chick:nth-child(2) { top: 50%; animation-duration: 30s; }
-.hero .chick:nth-child(3) { top: 70%; animation-duration: 22s; }
-
-/* Section container */
-.container {max-width:1200px;margin:auto;padding:40px 20px;text-align:center;}
-.container h2{color:var(--accent);margin-bottom:20px;}
-
-/* Footer */
-footer{text-align:center;padding:30px;color:#555;font-size:14px;}
-
-/* Bouton WhatsApp flottant */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  z-index: 1000;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.whatsapp-float:hover {transform: scale(1.1);}
-.whatsapp-float img {width:100%;height:100%;}
